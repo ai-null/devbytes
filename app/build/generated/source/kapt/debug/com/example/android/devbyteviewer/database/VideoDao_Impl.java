@@ -62,7 +62,7 @@ public final class VideoDao_Impl implements VideoDao {
   }
 
   @Override
-  public void insertAll(final DatabaseVideo videos) {
+  public void insertAll(final List<DatabaseVideo> videos) {
     __db.assertNotSuspendingTransaction();
     __db.beginTransaction();
     try {
